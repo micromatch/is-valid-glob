@@ -1,0 +1,38 @@
+{
+  "name": "is-valid-glob",
+  "description": "Return true if a value is a valid glob pattern.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/is-valid-glob",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/is-valid-glob",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/is-valid-glob/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "keywords": [
+    "array",
+    "check",
+    "glob",
+    "match",
+    "pattern",
+    "patterns",
+    "read",
+    "test",
+    "valid",
+    "validate"
+  ]
+}
