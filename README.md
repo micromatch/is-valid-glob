@@ -1,6 +1,6 @@
 # is-valid-glob [![NPM version](https://badge.fury.io/js/is-valid-glob.svg)](http://badge.fury.io/js/is-valid-glob)
 
-> Return true if a value is a valid glob pattern.
+> Return true if a value is a valid glob pattern or patterns.
 
 This really just checks to make sure that a pattern is either a string or array, and if it's an array it's either empty or consists of only strings.
 
