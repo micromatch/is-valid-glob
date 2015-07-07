@@ -13,12 +13,12 @@ describe('isValidGlob', function () {
     assert.equal(isValidGlob(['a/**/*.js', '*.js']), true);
 
     // neither of these should blow up
-    assert.equal(isValidGlob(''), true);
     assert.equal(isValidGlob([]), true);
   });
 
   it('should return false when the pattern is not a valid glob pattern:', function () {
     assert.equal(isValidGlob(), false);
+    assert.equal(isValidGlob(''), false);
     assert.equal(isValidGlob({}), false);
     assert.equal(isValidGlob(null), false);
     assert.equal(isValidGlob(undefined), false);
@@ -26,5 +26,6 @@ describe('isValidGlob', function () {
     assert.equal(isValidGlob(['foo', [[]]]), false);
     assert.equal(isValidGlob(['foo', [['bar']]]), false);
     assert.equal(isValidGlob(['foo', {}]), false);
+    assert.equal(isValidGlob(['']), false);
   });
 });
