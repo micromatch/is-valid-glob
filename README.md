@@ -28,7 +28,6 @@ isValidGlob('a');
 isValidGlob('a.js');
 isValidGlob('*.js');
 isValidGlob(['a', 'b']);
-isValidGlob('');
 isValidGlob([]);
 //=> all true
 ```
@@ -37,6 +36,7 @@ isValidGlob([]);
 
 ```js
 isValidGlob();
+isValidGlob('');
 isValidGlob({});
 isValidGlob(null);
 isValidGlob(undefined);
@@ -44,6 +44,7 @@ isValidGlob(new Buffer('foo'));
 isValidGlob(['foo', [[]]]);
 isValidGlob(['foo', [['bar']]]);
 isValidGlob(['foo', {}]);
+isValidGlob(['']);
 //=> all false
 ```
 
