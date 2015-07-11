@@ -5,7 +5,7 @@ module.exports = function isValidGlob(glob) {
     return true;
   }
   if (Array.isArray(glob)) {
-    return every(glob);
+    return glob.length !== 0 && every(glob);
   }
   return false;
 };
