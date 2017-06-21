@@ -1,11 +1,11 @@
 'use strict';
 
-/* deps: mocha */
+require('mocha');
 var assert = require('assert');
 var isValidGlob = require('./');
 
-describe('isValidGlob', function () {
-  it('should return true when the pattern is a valid glob pattern:', function () {
+describe('isValidGlob', function() {
+  it('should return true when the pattern is a valid glob pattern:', function() {
     assert.equal(isValidGlob('a'), true);
     assert.equal(isValidGlob('a.js'), true);
     assert.equal(isValidGlob('*.js'), true);
@@ -14,7 +14,7 @@ describe('isValidGlob', function () {
 
   });
 
-  it('should return false when the pattern is not a valid glob pattern:', function () {
+  it('should return false when the pattern is not a valid glob pattern:', function() {
     assert.equal(isValidGlob(), false);
     assert.equal(isValidGlob(''), false);
     assert.equal(isValidGlob({}), false);
